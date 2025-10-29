@@ -14,10 +14,6 @@ on:
     branches:
       - main
       - master
-    paths:
-      - 'docker/images/n8n/Dockerfile'
-      - 'packages/**'
-      - '.github/workflows/docker-fork-build-push.yml'
 
   # Build manuale
   workflow_dispatch:
@@ -42,9 +38,6 @@ on:
     branches:
       - main
       - master
-    paths:
-      - 'docker/images/n8n/Dockerfile'
-      - '.github/workflows/docker-fork-build-push.yml'
 
 jobs:
   determine-build-context:
